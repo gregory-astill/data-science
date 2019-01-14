@@ -1,0 +1,25 @@
+Manipulating data in bash with mac
+
+https://wiredpen.com/resources/basic-unix-commands-for-osx/
+ls
+cd ./Documents
+ls
+cd ./kaggle
+ls
+pwd
+
+https://superuser.com/questions/9847/linux-utility-for-finding-the-largest-files-directories
+find . -type f -print0 | xargs -0 du | sort -n | tail -10 | cut -f2 | xargs -I{} du -sh {}
+
+http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/
+xcode-select --install
+
+http://osxdaily.com/2018/03/07/how-install-homebrew-mac-os/
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+https://stackoverflow.com/questions/22258491/read-a-small-random-sample-from-a-big-csv-file-into-a-python-data-frame
+brew install coreutils
+gshuf -n 10000 train.csv > train-random-subset.csv
+
+
+
